@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x=prompt("Ingrese el valor de x:");
+        let y=prompt("Ingrese el valor de y:");
+        let simbolo=prompt("Ingrese el simbolo de la operacion a realizar:");
+        let factorialx=1;
+        let factorialy=1;
+        
+        switch(simbolo){
+            case "+":
+                alert(parseInt(x) + parseInt (y));
+                break;
+            case "-":
+                alert(parseInt(x) - parseInt (y));
+                break;
+            case "*":
+                alert(parseInt(x) * parseInt (y));
+                break;
+            case "/":
+                alert(parseInt(x) / parseInt (y));
+                break;
+             case "":
+                alert(Math.pow(x,y));
+                break;
+            case "!":
+                for(i=1;i<=x;i++){
+                    factorial=factorialx*i;
+                  }  
+            for(i=1;i<=y;i++){
+                    factorial=factorialy*i;
+
+                } 
+
+
+            default:
+                alert ("Ha ingresado un simbolo no identificado");
+                break;
+        } 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
